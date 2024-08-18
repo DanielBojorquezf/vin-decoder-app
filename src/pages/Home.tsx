@@ -111,7 +111,7 @@ const Home: React.FC = () => {
               if (key !== 'airbags') {
                 return (
                   <IonItem key={key}>
-                    <IonLabel>{key}: {value || 'N/A'}</IonLabel>
+                    <IonLabel>{key}: {key}: {String(value) || 'N/A'}</IonLabel>
                   </IonItem>
                 );
               }
@@ -125,7 +125,7 @@ const Home: React.FC = () => {
               <IonItem key={key} lines="none">
                 <IonLabel>
                   <div style={{ paddingLeft: '10px' }}>
-                    {key}: {value || 'N/A'}
+                    {key}: {key}: {String(value) || 'N/A'}
                   </div>
                 </IonLabel>
               </IonItem>
