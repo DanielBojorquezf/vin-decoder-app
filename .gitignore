@@ -1,31 +1,40 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencies
+node_modules/
+platforms/
+plugins/
 
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
+# Generated files
+www/
+build/
+dist/
+coverage/
 
-# testing
-/coverage
+# Capacitor and Cordova
+android/
+ios/
+.idea/
+.vscode/
 
-# production
-/dist
+# Environment variables
+.env
 
-# misc
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-/.nx
-/.nx/cache
-/.vscode/*
-!/.vscode/extensions.json
-.idea
-
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Optional eslint cache
-.eslintcache
+# Ionic-specific files
+.sourcemaps/
+.sass-cache/
+.cache/
+.DS_Store
+.vscode/
+*.swp
+*.swo
+.history
+
+# IDEs and editors
+.idea/
+*.iml
+*.sublime-workspace
+*.sublime-project
